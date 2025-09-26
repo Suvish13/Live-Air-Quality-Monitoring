@@ -75,9 +75,12 @@ button:hover, .btn:hover {
 }
 
 footer {
-  margin-top: 40px;
-  font-size: 14px;
-  color: #333;
+    background: #222;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
 }
 
 @media (max-width: 600px) {
