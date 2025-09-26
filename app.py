@@ -4,7 +4,6 @@ from openaq import OpenAQ
 app = Flask(__name__)
 client = OpenAQ(api_key="f8e124960439ed66813ddb7d0937bbc7b53284569a9f44fc0ca9d1f11c356c01")
 
-# Tamil Nadu bounding box
 tn_bbox = (76.0, 8.0, 80.5, 13.6)
 
 tn_locations = client.locations.list(
@@ -12,7 +11,6 @@ tn_locations = client.locations.list(
     limit=100
 )
 
-# Dictionary: location_id → {name, coordinates}
 locations_info = {
     loc.id: {
         "name": loc.name,
