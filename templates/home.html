@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LIVE AIR QUALITY MONITORING APP</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>LIVE AIR QUALITY MONITORING APPLICATION</h1>
+        <p>
+        This application was built to visualize live air quality parameterssuch as PM2.5, PM10, 
+        SO2, CO, CO2, O3, NO2, Relative Humidity, and Temperature using free and open data from the 
+        <a href="https://openaq.org" target="_blank">OpenAQ API</a>.The goal is to create an interactive 
+        and user-friendly application for understanding the current air quality across Southern India in 
+        real time through a map.Users can click directly on map markers to view the real-time pollutant values, 
+        and they also have the option to visualize the data in chart form for better insights.
+        </p>
+        <p>
+        I initially began by exploring how live air quality data could be visualized, since my earlier research work focused
+        mainly on mapping air pollutants using Sentinel-5P satellite imagery. However, I wanted to move beyond satellite-based 
+        analysis and experiment with real-time monitoring. During this exploration, I found the OpenAQ API, a free source
+        that provides live air quality data. I studied their documentation and sample code through Google Colab to understand the 
+        JSON data structure they provide. After understanding the data structure, I used Flask to build a web application for visualization. 
+        To make it more interactive, I integrated Leaflet.js for mapping the monitoring stations and displaying pollutant values in real time.
+        </p>
+
+        <div class="buttons">
+            <a href="{{ url_for('map_page') }}" class="btn"> View Live Air Quality Map</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Developed by <strong>Suvish S</strong></p>
+         <div class="footer-buttons">
+          <a href="https://arcg.is/Kb9WH0" target="_blank" class="btn btn-custom">
+            Portfolio
+          </a>
+          <a href="https://www.linkedin.com/in/suvish-s-1537941b1/" target="_blank" class="btn btn-custom">
+            LinkedIn Profile
+          </a>
+          <a href="https://github.com/Suvish13" target="_blank" class="btn btn-custom">
+            Git-Hub
+          </a>
+        </div>
+    </footer>
+</body>
+</html>
