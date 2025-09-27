@@ -34,7 +34,7 @@ for (const [id, info] of Object.entries(locations)) {
                     <h4 style="margin:5px 0; font-size:14px; color:#333;">${info.name}</h4>
                     <table style="border-collapse:collapse; width:100%;">
                         <thead>
-                            <tr style="background:#4CAF50; color:white; text-align:left;">
+                            <tr style="background:#4CAF50; color:white; text-align:left; font-family:garamond";>
                                 <th style="padding:4px;">Parameter</th>
                                 <th style="padding:4px;">Value</th>
                             </tr>
@@ -54,7 +54,7 @@ for (const [id, info] of Object.entries(locations)) {
             table += `
                         </tbody>
                     </table>
-                    <button onclick="showChart(${id})" style="margin-top:8px; padding:6px 12px; background:#2196F3; color:white; border:none; border-radius:5px; cursor:pointer;">
+                    <button onclick="showChart(${id})" style="margin-top:8px; padding:6px 12px; background:#2196F3; color:white; border:none; border-radius:5px; cursor:pointer;font-family:garamond";>
                         Visualize Chart
                     </button>
                 </div>
